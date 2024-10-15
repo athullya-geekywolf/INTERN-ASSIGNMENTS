@@ -1,0 +1,67 @@
+<div>
+    <h1>Employee Details</h1>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()" >
+    
+        <div>
+            <label for="name">Employee First Name : </label>
+            <input type="text" formControlName="firstname">
+        </div>
+        
+        <div>
+            <label for="name">Employee Last Name : </label>
+            <input type="text" formControlName="lastname">
+        </div>
+
+        <div>
+            <label for="email">Employee Email : </label>
+            <input type="text" formControlName="email">
+        </div>
+        
+        <div>
+            <label for="pnumber">Employee Phone Number : </label>
+            <input type="text" formControlName="pNumber">
+        </div>
+        
+        <div>
+            <label for="project">Project Scheduled : </label>
+            <select class="drop-down" formControlName="project">
+                <option >Choose the project assigned</option>
+                <option *ngFor="let p of projects">{{p.name | active: p.isActive}}</option>
+            </select>
+        </div>
+        
+        <label>Employee Address  </label>
+        <div formGroupName="address">
+        <div>
+            <label for="address1"> Address 1 : </label>
+            <input type="text" formControlName="address1">
+        </div>
+
+        <div>
+            <label for="address1"> Address 2: </label>
+            <input type="text" formControlName="address2">
+        </div>
+
+        <div>
+            <label for="address1"> City : </label>
+            <input type="text" formControlName="city">
+        </div>
+
+        
+    </div>
+       
+        <p>Complete the form to enable button.</p>
+        <button type="submit" [disabled]="!employeeForm.valid">Submit</button>
+</form>
+
+<div *ngIf="data" class="display-details">
+    <h2>Employee Details</h2>
+    <p>Name: {{ data.firstname | uppercase }} {{ data.lastname |lowercase }}</p>
+    <p>Email: {{ data.email }}</p>
+    <p>Phone Number: {{ data.pNumber }}</p>
+    <p>Project Assigned: {{data.project}}</p>
+    <p>Address Line 1: {{ data.address.address1 }}</p>
+    <p>Address Line 2: {{ data.address.address2 }}</p>
+    <p>City: {{ data.address.city }}</p>
+</div>
+</div>

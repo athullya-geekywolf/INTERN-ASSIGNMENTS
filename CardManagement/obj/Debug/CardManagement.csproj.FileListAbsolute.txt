@@ -1,0 +1,7 @@
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\bin\Debug\CardManagement.exe.config
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\bin\Debug\CardManagement.exe
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\bin\Debug\CardManagement.pdb
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\obj\Debug\CardManagement.csproj.AssemblyReference.cache
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\obj\Debug\CardManagement.csproj.CoreCompileInputs.cache
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\obj\Debug\CardManagement.exe
+C:\Users\athullya.r\source\HTML\INTERN-ASSIGNMENTS\CardManagement\obj\Debug\CardManagement.pdb

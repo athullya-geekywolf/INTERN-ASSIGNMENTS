@@ -1,0 +1,18 @@
+<table class="my-table">
+    <caption>Demo Table</caption>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Chief Minister</th>
+        <th>Capital</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let state of states">
+        <td>{{ state.state }}</td>
+        <td>{{ state.cm }}</td>
+        <td>{{ state.capital }}</td>
+      </tr>
+    </tbody>
+  </table>   
+  

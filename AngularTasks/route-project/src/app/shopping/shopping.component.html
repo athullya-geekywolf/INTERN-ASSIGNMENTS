@@ -1,0 +1,19 @@
+<div class="list-cont">
+    <h1>Shopping List</h1>
+<div class="input-container">
+  <input
+    type="text"
+    [(ngModel)]="itemValue"
+    placeholder="Enter an item"
+    (keyup.enter)="addItem()" 
+  />
+  <button (click)="addItem()">Add</button>
+</div>
+
+<ul>
+  <li *ngFor="let item of itemList; let i = index">
+    {{ item }}
+    <button (click)="deleteItem(i)">Delete</button>
+  </li>
+</ul>
+</div>

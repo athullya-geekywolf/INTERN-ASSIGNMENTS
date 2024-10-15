@@ -1,0 +1,5 @@
+<div class="list-cont">
+  <h1 class="cont-header">Shopping List</h1>
+  <app-add-item (itemAdded)="addItem($event)" [itemCount]="itemList.length"></app-add-item>
+  <app-view-item [itemList]="itemList" (itemDeleted)="deleteItem($event)"></app-view-item>
+</div>
